@@ -1,34 +1,29 @@
 .container {
     display: grid;
-    grid-template-columns: 3fr 1fr;
+    grid-template-columns: 3fr 3fr 3fr;
+    border: 1px solid black;
 }
+div {text-align: center;}
 
-#box1 {
-    text-align: center;
-    border: 3px solid black;
-    grid-column: span 2;
-    padding: 10px;
-    font-size: xx-large;
-    background-color: rgba(100, 255, 50, 1);
-    height: 170px;
-}
+#box1 { border: 3px solid black;
+        grid-column: span 3;
+        padding: 10px;
+        font-size: xx-large;
+        background-color: rgba(100, 255, 50, 1);
+        height: 170px;
+    }
 
-#box2 {
-    grid-column: span 2;
-    text-align: center;
-}
+#space3 { grid-column: span 3;
+    
+        }
 
-#box3 {
-    grid-column: span 1;
-    height: auto;
-    border-left: 3px solid black;
-    padding: 0px 0px 0px 10px;
-}
+#box3 {grid-column: span 1;
+        height: auto;
+        border-left: 3px solid black;
+        padding: 0px 0px 0px 10px;
+    }   
 
-ul {
-    border: 3px solid black;
-    border-right-width: 0.5px;
-    border-top-width: 0.5px;
+ul {border: 3px solid black;
     width: 356.4px;
     height: 20px;
     text-align: center;
@@ -36,9 +31,11 @@ ul {
     display: inline-block;
     font-weight: bold;
     margin: 0px;
+    background-color: rgba(100, 255, 50, 1);
 }
 
 ul:hover {
+    
     background-color: yellow;
     color: black;
 }
@@ -48,6 +45,21 @@ a {
     color: black;
 }
 
-#account {
-    border-right-width: 3px;
+#box4 {color: white;}
+
+#account {border-right-width: 3px;
 }
+
+img {   width: 100%;
+        height: 100%;}
+
+        body{background-color: black;}
+
+        /*html { background-repeat:no-repeat;
+                   background-position:center center;
+                   background-attachment:fixed; 
+                   -webkit-background-size: cover;
+                   -moz-background-size: cover;
+                   -o-background-size: cover;
+                   background-size: cover;
+                   }*/
