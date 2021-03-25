@@ -27,7 +27,17 @@ body {
     grid-column: span 2;
     height: 637px;
     padding: 0px 0px 0px 10px;
+    text-align: center;
     color: #c5c6c7;
+}
+
+#box3 h3 {
+    border: 3px solid #45a29e;
+    position: absolute;
+    padding: 10px 10px 10px 10px;
+    margin-left: 38%;
+    text-align: center;
+    width: 400px
 }
 
 ul {
@@ -53,51 +63,6 @@ a {
     color: black;
 }
 
-#regLink {
-    text-decoration: underline;
-    color:#c5c6c7;
-}
-
 #account {
     border-right-width: 3px;
-}
-
-#login {
-    width: 350px;
-    top: 55%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    position: absolute;
-}
-
-#login h1 {
-    font-size: 40px;
-    text-align: center;
-    margin: 40px 0;
-}
-
-#login p {
-    font-size: 20px;
-    margin: 15px 0;
-}
-
-#login input {
-    font-size: 16px;
-    width: 100%;
-    padding: 15px 10px;
-    border-radius: 5px;
-}
-
-#login button {
-    font-size: 18px;
-    font-weight: bold;
-    margin: 20px 0;
-    padding: 10px 15px;
-    width: 50%;
-    border-radius: 5px;
-}
-
-button:hover {
-    background-color: #66Fcf1;
-    color: black;
 }

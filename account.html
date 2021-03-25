@@ -15,16 +15,33 @@
             <div id="box3">
                 <div id="login">
                     <h1>Login Here</h1>
-                    <form action="#" method="POST">
-                        <p>User Name:</p>
-                        <input type="text" name="user" placeholder="User Name">
+                    <form action="#" method="POST" id="checkForm">
+                        <p>Email Address:</p>
+                        <input type="email" placeholder="Email Address" id="email" required>
                         <p>Password:</p>
-                        <input type="password" name="password" placeholder="Password">
-                        <button type="submit" id="loginButton">Login</button><button type="submit" id="registerButton">Register</button>
+                        <input type="password" placeholder="Password" id="password" required>
+                        <button type="submit" id="loginButton">Login</button>
                     </form>
+                    <br>
+                    <p>Not a member?</p><p><a href="register.html" id="regLink">Register</a></p>
                 </div>
             </div>
 
         </div>
     </body>
 </html>
+<script>
+    // code to validate all fields have been filled
+    var email = document.getElementById('email');
+    var password = document.getElementById('password');
+    var login = document.getElementById('loginButton');
+    var form = document.querySelector('form');
+    form.onsubmit = ()=>{return false}
+
+    login.onclick = ()=>{
+        if ((email.value != "") && (password.value != ""))
+        {
+            window.location.href = "mainAccountPage.html";
+        }
+    }
+</script>
