@@ -58,6 +58,30 @@ img {   width: 100%;
 
 body{background-color: black;}
 
+
+/*@keyframes leftAnimation*/
+.button:hover   {background-color: rgba(100, 255, 50, 1);
+                font-size: 30px;
+                }
+
+
+/* creates a CSS button (P.W.) */
+.button {	
+    position: relative;
+    top: 150px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 25px;
+    border-radius: 12px;
+    border: 2px solid black;
+    transition-duration: 0.4s;
+    animation-name: leftAnimation;
+    animation-duration: 2s;
+    border-color: rgba(100, 255, 50, 1);
+}
+
 /*this is an id that will make a paragraph for the movies so they won't look like they are */
 #imgSpace {Padding: 10px}
 
